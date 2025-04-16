@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#f4c127"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Options">
+
+    <ImageView
+        android:id="@+id/imgGB"
+        android:layout_width="409dp"
+        android:layout_height="730dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/gameboy"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <Switch
+        android:id="@+id/swMusic"
+        android:layout_width="108dp"
+        android:layout_height="70dp"
+        android:fontFamily="@font/pokemon"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:text="MUSIC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgGB"
+        app:layout_constraintVertical_bias="0.262" />
+
+    <Switch
+        android:id="@+id/swSound"
+        android:layout_width="108dp"
+        android:layout_height="70dp"
+        android:fontFamily="@font/pokemon"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:text="SOUND"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgGB"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="125dp"
+        android:height="125dp"
+        android:backgroundTint="#d59c56"
+        android:fontFamily="@font/pokemon"
+        android:text="Back"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="@+id/imgGB"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.724"
+        app:strokeColor="#7A2827"
+        app:strokeWidth="4dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
