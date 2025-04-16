@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="mmbutton" parent="Widget.MaterialComponents.Button">
+        <item name="android:width">230dp</item>
+        <item name="android:height">60dp</item>
+        <item name="backgroundTint">@color/darkyellow</item>
+        <item name="icon">@drawable/pokeball</item>
+        <item name="iconGravity">start</item>
+        <item name="iconSize">32dp</item>
+        <item name="iconTintMode">multiply</item>
+        <item name="iconPadding">10dp</item>
+        <item name="strokeColor">@color/black</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="cornerRadius">20dp</item>
+        <item name="android:text">@null</item>
+    </style>
+
+</resources>
