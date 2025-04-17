@@ -13,6 +13,9 @@
         android:theme="@style/Theme.PokemonMatch"
         tools:targetApi="31">
         <activity
+            android:name=".CardCatalogue"
+            android:exported="false" />
+        <activity
             android:name=".SelectDifficulty"
             android:exported="false" />
         <activity
