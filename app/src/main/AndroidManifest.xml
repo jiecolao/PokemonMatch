@@ -28,10 +28,10 @@
             android:name=".SelectDifficulty"
             android:exported="false" />
         <activity
-            android:name=".Ranking"
+            android:name=".E_Leaderboard"
             android:exported="false" />
         <activity
-            android:name=".LoginSignup"
+            android:name=".Login"
             android:exported="false" />
         <activity
             android:name=".Options"

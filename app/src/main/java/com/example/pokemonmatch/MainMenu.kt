@@ -24,7 +24,7 @@ class MainMenu : AppCompatActivity() {
 
         btnPlay.setOnClickListener() { goTo(SelectDifficulty::class.java, true) }
         btnOptions.setOnClickListener() { goTo(Options::class.java, true) }
-        btnLeaderboard.setOnClickListener() { goTo(Ranking::class.java, true) }
+        btnLeaderboard.setOnClickListener() { goTo(E_Leaderboard::class.java, true) }
         btnCatalogue.setOnClickListener() { goTo(CardCatalogue::class.java, true) }
         btnExit.setOnClickListener() { endApp() }
 

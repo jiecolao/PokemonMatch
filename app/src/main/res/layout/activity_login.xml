@@ -2,11 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/Login_Signup"
+    android:id="@+id/Login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/yellow"
-    tools:context=".LoginSignup">
+    tools:context=".Login">
 
     <ImageView
         android:id="@+id/imgPikachu"
@@ -33,31 +33,31 @@
         app:srcCompat="@drawable/pokemon_title" />
 
     <ImageView
-        android:id="@+id/imgLoginSignup"
-        android:layout_width="327dp"
-        android:layout_height="64dp"
+        android:id="@+id/imageView11"
+        android:layout_width="201dp"
+        android:layout_height="74dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgPikachu"
-        app:srcCompat="@drawable/login_signup" />
+        app:srcCompat="@drawable/login" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cvCont"
         android:layout_width="300dp"
-        android:layout_height="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:background="@color/white"
         app:cardCornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgLoginSignup"
-        app:layout_constraintVertical_bias="0.106">
+        app:layout_constraintTop_toBottomOf="@+id/imageView11">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
 
             <ImageView
                 android:id="@+id/imgGreet"
@@ -66,13 +66,6 @@
                 android:layout_gravity="center"
                 app:srcCompat="@drawable/welcomeadv" />
 
-            <ImageView
-                android:id="@+id/imgLoginhere"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_marginTop="10dp"
-                app:srcCompat="@drawable/loginhere" />
-
             <EditText
                 android:id="@+id/inpEmail"
                 android:layout_width="wrap_content"
@@ -80,7 +73,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:ems="10"
-                android:hint="Email"
+                android:hint="Username"
                 android:inputType="textEmailAddress" />
 
             <EditText
@@ -109,14 +102,14 @@
                 app:strokeWidth="1dp" />
 
             <Button
-                android:id="@+id/btnSignup"
+                android:id="@+id/btnGuest"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:backgroundTint="@color/yellow"
+                android:backgroundTint="@color/darkyellow"
                 android:shadowColor="@color/black"
-                android:text="Sign up"
+                android:text="Log in as Guest"
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 app:cornerRadius="5dp"
