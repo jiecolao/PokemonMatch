@@ -80,7 +80,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/pokemon"
-                android:text="00:00"
+                android:text="60"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="48sp" />
@@ -97,19 +97,20 @@
         android:id="@+id/gridCardCont"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:columnCount="4"
+        android:visibility="visible"
+        app:columnCount="5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
         app:layout_constraintVertical_bias="0.23"
-        app:rowCount="4">
+        app:rowCount="6">
 
         <ImageView
             android:id="@+id/c1"
-            android:layout_width="70dp"
-            android:layout_height="80dp"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
             android:layout_margin="8dp"
             app:layout_column="0"
             app:layout_gravity="center"
@@ -118,8 +119,8 @@
 
         <ImageView
             android:id="@+id/c2"
-            android:layout_width="70dp"
-            android:layout_height="80dp"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
             android:layout_margin="8dp"
             app:layout_column="1"
             app:layout_gravity="center"
@@ -128,8 +129,8 @@
 
         <ImageView
             android:id="@+id/c3"
-            android:layout_width="70dp"
-            android:layout_height="80dp"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
             android:layout_margin="8dp"
             app:layout_column="2"
             app:layout_gravity="center"
@@ -138,8 +139,8 @@
 
         <ImageView
             android:id="@+id/c4"
-            android:layout_width="70dp"
-            android:layout_height="80dp"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
             android:layout_margin="8dp"
             app:layout_column="3"
             app:layout_gravity="center"
@@ -148,38 +149,48 @@
 
         <ImageView
             android:id="@+id/c5"
-            android:layout_width="70dp"
-            android:layout_height="80dp"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
             android:layout_margin="8dp"
-            app:layout_column="0"
+            app:layout_column="4"
             app:layout_gravity="center"
-            app:layout_row="1"
+            app:layout_row="0"
             app:srcCompat="@drawable/game_card" />
 
         <ImageView
             android:id="@+id/c6"
-            android:layout_width="70dp"
-            android:layout_height="80dp"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
             android:layout_margin="8dp"
-            app:layout_column="1"
+            app:layout_column="0"
             app:layout_gravity="center"
             app:layout_row="1"
             app:srcCompat="@drawable/game_card" />
 
         <ImageView
             android:id="@+id/c7"
-            android:layout_width="70dp"
-            android:layout_height="80dp"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
             android:layout_margin="8dp"
-            app:layout_column="2"
+            app:layout_column="1"
             app:layout_gravity="center"
             app:layout_row="1"
             app:srcCompat="@drawable/game_card" />
 
         <ImageView
             android:id="@+id/c8"
-            android:layout_width="70dp"
-            android:layout_height="80dp"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            app:layout_column="2"
+            app:layout_gravity="center"
+            app:layout_row="1"
+            app:srcCompat="@drawable/game_card" />
+
+        <ImageView
+            android:id="@+id/c9"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
             android:layout_margin="8dp"
             app:layout_column="3"
             app:layout_gravity="center"
@@ -187,39 +198,49 @@
             app:srcCompat="@drawable/game_card" />
 
         <ImageView
-            android:id="@+id/c9"
-            android:layout_width="70dp"
-            android:layout_height="80dp"
-            android:layout_margin="8dp"
-            app:layout_column="0"
-            app:layout_gravity="center"
-            app:layout_row="2"
-            app:srcCompat="@drawable/game_card" />
-
-        <ImageView
             android:id="@+id/c10"
-            android:layout_width="70dp"
-            android:layout_height="80dp"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
             android:layout_margin="8dp"
-            app:layout_column="1"
+            app:layout_column="4"
             app:layout_gravity="center"
-            app:layout_row="2"
+            app:layout_row="1"
             app:srcCompat="@drawable/game_card" />
 
         <ImageView
             android:id="@+id/c11"
-            android:layout_width="70dp"
-            android:layout_height="80dp"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
             android:layout_margin="8dp"
-            app:layout_column="2"
+            app:layout_column="0"
             app:layout_gravity="center"
             app:layout_row="2"
             app:srcCompat="@drawable/game_card" />
 
         <ImageView
             android:id="@+id/c12"
-            android:layout_width="70dp"
-            android:layout_height="80dp"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            app:layout_column="1"
+            app:layout_gravity="center"
+            app:layout_row="2"
+            app:srcCompat="@drawable/game_card" />
+
+        <ImageView
+            android:id="@+id/c13"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            app:layout_column="2"
+            app:layout_gravity="center"
+            app:layout_row="2"
+            app:srcCompat="@drawable/game_card" />
+
+        <ImageView
+            android:id="@+id/c14"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
             android:layout_margin="8dp"
             app:layout_column="3"
             app:layout_gravity="center"
@@ -227,9 +248,19 @@
             app:srcCompat="@drawable/game_card" />
 
         <ImageView
-            android:id="@+id/c13"
-            android:layout_width="70dp"
-            android:layout_height="80dp"
+            android:id="@+id/c15"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            app:layout_column="4"
+            app:layout_gravity="center"
+            app:layout_row="2"
+            app:srcCompat="@drawable/game_card" />
+
+        <ImageView
+            android:id="@+id/c16"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
             android:layout_margin="8dp"
             app:layout_column="0"
             app:layout_gravity="center"
@@ -237,9 +268,9 @@
             app:srcCompat="@drawable/game_card" />
 
         <ImageView
-            android:id="@+id/c15"
-            android:layout_width="70dp"
-            android:layout_height="80dp"
+            android:id="@+id/c17"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
             android:layout_margin="8dp"
             app:layout_column="1"
             app:layout_gravity="center"
@@ -247,9 +278,9 @@
             app:srcCompat="@drawable/game_card" />
 
         <ImageView
-            android:id="@+id/c16"
-            android:layout_width="70dp"
-            android:layout_height="80dp"
+            android:id="@+id/c18"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
             android:layout_margin="8dp"
             app:layout_column="2"
             app:layout_gravity="center"
@@ -257,13 +288,123 @@
             app:srcCompat="@drawable/game_card" />
 
         <ImageView
-            android:id="@+id/c17"
-            android:layout_width="70dp"
-            android:layout_height="80dp"
+            android:id="@+id/c19"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
             android:layout_margin="8dp"
             app:layout_column="3"
             app:layout_gravity="center"
             app:layout_row="3"
+            app:srcCompat="@drawable/game_card" />
+
+        <ImageView
+            android:id="@+id/c20"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            app:layout_column="4"
+            app:layout_gravity="center"
+            app:layout_row="3"
+            app:srcCompat="@drawable/game_card" />
+
+        <ImageView
+            android:id="@+id/c21"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            app:layout_column="0"
+            app:layout_gravity="center"
+            app:layout_row="4"
+            app:srcCompat="@drawable/game_card" />
+
+        <ImageView
+            android:id="@+id/c22"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            app:layout_column="1"
+            app:layout_gravity="center"
+            app:layout_row="4"
+            app:srcCompat="@drawable/game_card" />
+
+        <ImageView
+            android:id="@+id/c23"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            app:layout_column="2"
+            app:layout_gravity="center"
+            app:layout_row="4"
+            app:srcCompat="@drawable/game_card" />
+
+        <ImageView
+            android:id="@+id/c24"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            app:layout_column="3"
+            app:layout_gravity="center"
+            app:layout_row="4"
+            app:srcCompat="@drawable/game_card" />
+
+        <ImageView
+            android:id="@+id/c25"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            app:layout_column="4"
+            app:layout_gravity="center"
+            app:layout_row="4"
+            app:srcCompat="@drawable/game_card" />
+
+        <ImageView
+            android:id="@+id/c26"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            app:layout_column="0"
+            app:layout_gravity="center"
+            app:layout_row="5"
+            app:srcCompat="@drawable/game_card" />
+
+        <ImageView
+            android:id="@+id/c27"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            app:layout_column="1"
+            app:layout_gravity="center"
+            app:layout_row="5"
+            app:srcCompat="@drawable/game_card" />
+
+        <ImageView
+            android:id="@+id/c28"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            app:layout_column="2"
+            app:layout_gravity="center"
+            app:layout_row="5"
+            app:srcCompat="@drawable/game_card" />
+
+        <ImageView
+            android:id="@+id/c29"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            app:layout_column="3"
+            app:layout_gravity="center"
+            app:layout_row="5"
+            app:srcCompat="@drawable/game_card" />
+
+        <ImageView
+            android:id="@+id/c30"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            app:layout_column="4"
+            app:layout_gravity="center"
+            app:layout_row="5"
             app:srcCompat="@drawable/game_card" />
 
     </androidx.gridlayout.widget.GridLayout>
