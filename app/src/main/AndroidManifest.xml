@@ -28,7 +28,7 @@
             android:name=".SelectDifficulty"
             android:exported="false" />
         <activity
-            android:name=".E_Leaderboard"
+            android:name=".Leaderboard"
             android:exported="false" />
         <activity
             android:name=".Login"

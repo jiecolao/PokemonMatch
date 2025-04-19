@@ -26,7 +26,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/LLDifficulty"
-        app:srcCompat="@drawable/back" />
+        app:srcCompat="@drawable/nav_back" />
 
     <ImageView
         android:id="@+id/imageView"

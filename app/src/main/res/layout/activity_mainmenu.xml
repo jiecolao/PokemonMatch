@@ -90,7 +90,7 @@
         app:layout_constraintEnd_toEndOf="@+id/btnOptions"
         app:layout_constraintStart_toStartOf="@+id/btnOptions"
         app:layout_constraintTop_toTopOf="@+id/btnOptions"
-        app:srcCompat="@drawable/options" />
+        app:srcCompat="@drawable/nav_options" />
 
     <Button
         android:id="@+id/btnLB"

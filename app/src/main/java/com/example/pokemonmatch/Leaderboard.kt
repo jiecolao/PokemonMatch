@@ -7,14 +7,14 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class E_Leaderboard : AppCompatActivity() {
+class Leaderboard : AppCompatActivity() {
 
     private lateinit var btnBack: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_eleaderboard)
+        setContentView(R.layout.activity_leaderboard)
 
         btnBack = findViewById(R.id.imgExitLB)
         btnBack.setOnClickListener() { endActivity() }
