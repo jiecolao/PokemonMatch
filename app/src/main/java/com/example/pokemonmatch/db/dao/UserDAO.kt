@@ -10,6 +10,7 @@ import com.example.pokemonmatch.db.entities.User
 interface UserDAO {
     // uspsert, delete score
     // erase data nanaman
+    // isang table nalang
     @Insert
     suspend fun insertUser(user: User)
     @Delete

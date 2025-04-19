@@ -9,10 +9,8 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import androidx.room.Room
-import com.example.pokemonmatch.db.dao.PokemonDAO
 import com.example.pokemonmatch.db.dao.UserDAO
 import com.example.pokemonmatch.db.database.AppDatabase
-import com.example.pokemonmatch.db.entities.Pokemon
 import com.example.pokemonmatch.db.entities.User
 import kotlinx.coroutines.launch
 
@@ -76,14 +74,14 @@ class MainMenu : AppCompatActivity() {
         ).build()
 
         val userDAO = db.userDao()
-        val pokemonDAO = db.PokemonDAO()
+//        val pokemonDAO = db.PokemonDAO()
         val newUser = User(g_id = 2, username = "Ash", password = "123", highscore = 0)
 
         lifecycleScope.launch {
 //            userDAO.insertUser(newUser)
             var users = userDAO.getAllUsers()
-            var pokemons = pokemonDAO.getAllPokemon()
-            Log.d("AllPokemonsQuery", "Fetched: $pokemons")
+//            var pokemons = pokemonDAO.getAllPokemon()
+//            Log.d("AllPokemonsQuery", "Fetched: $pokemons")
         }
     }
 }

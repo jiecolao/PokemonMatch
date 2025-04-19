@@ -57,7 +57,7 @@
                 android:textSize="34sp" />
 
             <TextView
-                android:id="@+id/txtScore"
+                android:id="@+id/txtEScore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -66,6 +66,18 @@
                 android:textAlignment="center"
                 android:textColor="@color/darkyellow"
                 android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/txtEStreak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/pokemon"
+                android:text="+0"
+                android:textAlignment="center"
+                android:textColor="#4cff00"
+                android:textSize="34sp" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -85,11 +97,6 @@
                 android:textColor="@color/white"
                 android:textSize="48sp" />
 
-            <ProgressBar
-                android:id="@+id/barTimer"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
         </LinearLayout>
     </LinearLayout>
 
