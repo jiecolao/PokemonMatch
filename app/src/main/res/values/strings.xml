@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">PokemonMatch</string>
+    <string name="charmander">Charmander is a Fire type Pokémon. Charmander is a bipedal, reptilian Pokémon. Most of its body is colored orange, while its underbelly is light yellow and it has blue eyes. It has a flame at the end of its tail, which is said to signify its health.</string>
+    <string name="bulbasaur">Bulbasaur is a small, green amphibian Pokemon with a seed on its back. The seed grows larger as Bulbasaur develops, and it stores energy and nutrients. It can survive for days without eating and is often found napping in bright sunlight</string>
+    <string name="squirtle">Squirtle is a small, blue, turtle-like Pokémon with a hard shell on its back. It can withdraw into its shell for protection and can spray foamy water from its mouth. Squirtle is known for its ability to swim at high speeds due to its shell\'s aerodynamic shape.</string>
+    <string name="pikachu">Pikachu, the Mouse Pokémon, is a yellow, rodent-like Pokémon with an Electric type. It\'s known for its lightning bolt-shaped tail and red pouches on its cheeks that store electricity.</string>
+    <string name="caterpie">Caterpie is a Bug-type Pokémon. The Pokédex entries describe it as a green caterpillar-like creature with yellow, ring-shaped markings on its sides, a yellow underside, and a teardrop-shaped tail.</string>
+    <string name="ditto">Ditto is a Normal-type Pokémon, known for its ability to transform into other Pokémon using its "Transform" move.</string>
+    <string name="snorlax">Snorlax is a highly sleepy Pokémon, known for constantly sleeping. Thanks to its extremely strong digestive juices, Snorlax\'s stomach can dissolve any kind of poison. As a result, it can eat tainted food without worry.</string>
+    <string name="eevee">Eevee is a Normal-type Pokémon known for its fluffy appearance and playful nature.</string>
+    <string name="psyduck">A duck-like Pokémon constantly plagued by headaches. When the headache intensifies, it unleashes powerful psychic abilities, but forgets doing so afterward. Psyduck is typically depicted as looking stunned or vacant due to the constant pain.</string>
+    <string name="piplup">Piplup is a light-blue penguin-like Pokémon with dark blue head and white face, a yellow beak, and yellow feet. It\'s known for its pride and reluctance to accept food from others, often puffing out its chest even when it falls.</string>
+    <string name="gengar">Gengar is a Ghost/Poison-type Pokémon known for its shadow-like appearance and mischievous nature. It\'s a round, purple being with red eyes and a sinister grin, typically found skulking in shadows and urban areas.</string>
+    <string name="mew">Mew is a small, pink, cat-like Psychic-type Mythical Pokémon known for its rarity, powerful abilities, and unique DNA. It\'s said to be the ancestor of all Pokémon and can learn almost any move.</string>
+    <string name="vaporeon">Vaporeon is a Water-type Pokémon resembling a feline with aquatic features, particularly its fins and tail, which are often mistaken for a mermaid\'s.</string>
+    <string name="magikarp">Magikarp is a weak, fish-like Water-type Pokémon, known for its poor stats and inability to swim well. It is often depicted as pathetic and useless in battle, though it is remarkably resilient and can survive in polluted water.</string>
+    <string name="gardevoir">Gardevoir is a Psychic/Fairy-type Pokémon, resembling a humanoid with a flowing gown and a bobcut hairstyle. Its body is primarily white, with green hair, arms, and the underside of its gown.</string>
+    <string name="lapras">Lapras is a Water/Ice-type Pokémon resembling a plesiosaur, known for its gentle nature, intelligence, and ability to ferry people across water. It has a blue hide with darker blue spots, a cream-colored underside, and a heavy, gray shell with blunt knobs.</string>
+    <string name="meowth">Meowth is a Normal-type Pokémon known for its feline appearance, a distinctive gold coin on its forehead, and its nocturnal habits. It\'s a bipedal Pokémon, meaning it walks upright on two legs, and is generally seen prowling the streets of cities.</string>
+    <string name="pidgey">Pidgey is a small, plump-bodied Normal/Flying type Pokémon. It\'s primarily brown, with a cream-colored face, belly, and flight feathers. It has a short, brown tail and a pinkish-gray beak and feet.</string>
+
 </resources>

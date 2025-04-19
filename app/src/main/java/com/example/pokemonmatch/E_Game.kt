@@ -20,7 +20,7 @@ class E_Game : AppCompatActivity() {
     // [ ] mass produce
     // [ ] login, login as guest
     // [ ] reflect the score to db
-    // [ ] card catalogue fix
+    // [ ] card catalogue fix, update card libr, event listeners + text
     // [ ] bg music, sfx
     // [ ] compile app to exe
 
