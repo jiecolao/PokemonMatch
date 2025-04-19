@@ -18,14 +18,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/bg" />
+        app:srcCompat="@drawable/asst_bg" />
 
     <ImageView
         android:id="@+id/imgLogo"
         android:layout_width="392dp"
         android:layout_height="226dp"
         android:layout_marginTop="16dp"
-        android:src="@drawable/pokemon_logo"
+        android:src="@drawable/asst_pokemon_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +39,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgLogo"
-        app:srcCompat="@drawable/matchemall" />
+        app:srcCompat="@drawable/asst_matchemall" />
 
     <Button
         android:id="@+id/btnPlay"
@@ -65,7 +65,7 @@
         app:layout_constraintStart_toStartOf="@+id/btnPlay"
         app:layout_constraintTop_toTopOf="@+id/btnPlay"
         app:layout_constraintVertical_bias="0.454"
-        app:srcCompat="@drawable/play" />
+        app:srcCompat="@drawable/nav_play" />
 
     <Button
         android:id="@+id/btnOptions"
@@ -116,7 +116,7 @@
         app:layout_constraintStart_toStartOf="@+id/btnLB"
         app:layout_constraintTop_toTopOf="@+id/btnLB"
         app:layout_constraintVertical_bias="0.416"
-        app:srcCompat="@drawable/leaderboard" />
+        app:srcCompat="@drawable/nav_leaderboard" />
 
     <Button
         android:id="@+id/btnCat"
@@ -141,7 +141,7 @@
         app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="@+id/btnCat"
         app:layout_constraintTop_toTopOf="@+id/btnCat"
-        app:srcCompat="@drawable/catalogue" />
+        app:srcCompat="@drawable/nav_catalogue" />
 
     <Button
         android:id="@+id/btnExit"
@@ -165,7 +165,7 @@
         app:layout_constraintEnd_toEndOf="@+id/btnExit"
         app:layout_constraintStart_toStartOf="@+id/btnExit"
         app:layout_constraintTop_toTopOf="@+id/btnExit"
-        app:srcCompat="@drawable/exit" />
+        app:srcCompat="@drawable/nav_exit" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

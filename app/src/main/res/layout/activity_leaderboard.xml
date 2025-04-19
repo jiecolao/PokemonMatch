@@ -14,7 +14,7 @@
         android:layout_height="881dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/rankbg" />
+        app:srcCompat="@drawable/asst_rankbg" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -36,7 +36,7 @@
                 android:layout_width="262dp"
                 android:layout_height="51dp"
                 android:layout_gravity="center"
-                app:srcCompat="@drawable/leaderboard" />
+                app:srcCompat="@drawable/nav_leaderboard" />
 
         </LinearLayout>
 
@@ -44,7 +44,7 @@
             android:id="@+id/imageView3"
             android:layout_width="118dp"
             android:layout_height="133dp"
-            app:srcCompat="@drawable/pikachu_pixel" />
+            app:srcCompat="@drawable/asst_pikachu_pixel" />
 
     </LinearLayout>
 
@@ -63,7 +63,7 @@
             android:id="@+id/first"
             android:layout_width="347dp"
             android:layout_height="60dp"
-            android:background="@drawable/ld_bg"
+            android:background="@drawable/r_ld_bg"
             android:orientation="horizontal">
 
             <TextView
@@ -104,7 +104,7 @@
             android:layout_width="347dp"
             android:layout_height="60dp"
             android:layout_marginTop="20dp"
-            android:background="@drawable/ld_bg"
+            android:background="@drawable/r_ld_bg"
             android:orientation="horizontal">
 
             <TextView
@@ -145,7 +145,7 @@
             android:layout_width="347dp"
             android:layout_height="60dp"
             android:layout_marginTop="20dp"
-            android:background="@drawable/ld_bg"
+            android:background="@drawable/r_ld_bg"
             android:orientation="horizontal">
 
             <TextView
@@ -186,7 +186,7 @@
             android:layout_width="347dp"
             android:layout_height="60dp"
             android:layout_marginTop="20dp"
-            android:background="@drawable/ld_bg"
+            android:background="@drawable/r_ld_bg"
             android:orientation="horizontal">
 
             <TextView
@@ -227,7 +227,7 @@
             android:layout_width="347dp"
             android:layout_height="60dp"
             android:layout_marginTop="20dp"
-            android:background="@drawable/ld_bg"
+            android:background="@drawable/r_ld_bg"
             android:orientation="horizontal">
 
             <TextView
@@ -272,7 +272,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/exit" />
+        app:srcCompat="@drawable/nav_exit" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

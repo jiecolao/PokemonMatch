@@ -16,7 +16,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pikachu_head" />
+        app:srcCompat="@drawable/asst_pikachu_head" />
 
     <ImageView
         android:id="@+id/imgBack"
@@ -36,7 +36,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:srcCompat="@drawable/selectdiff" />
+        app:srcCompat="@drawable/asst_selectdiff" />
 
     <LinearLayout
         android:id="@+id/LLDifficulty"
@@ -54,7 +54,7 @@
             android:layout_height="70dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            app:srcCompat="@drawable/easy" />
+            app:srcCompat="@drawable/nav_easy" />
 
         <ImageView
             android:id="@+id/imgMedium"
@@ -62,14 +62,14 @@
             android:layout_height="70dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            app:srcCompat="@drawable/medium" />
+            app:srcCompat="@drawable/nav_medium" />
 
         <ImageView
             android:id="@+id/imgHard"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginTop="20dp"
-            app:srcCompat="@drawable/hard" />
+            app:srcCompat="@drawable/nav_hard" />
 
     </LinearLayout>
 

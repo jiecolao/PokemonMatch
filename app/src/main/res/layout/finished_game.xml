@@ -8,7 +8,7 @@
     <LinearLayout
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_pausegame"
+        android:background="@drawable/r_bg_pausegame"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,7 +20,7 @@
             android:layout_width="187dp"
             android:layout_height="70dp"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/gamefinished" />
+            app:srcCompat="@drawable/asst_gamefinished" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,7 +32,7 @@
                 android:layout_width="17dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/score" />
+                app:srcCompat="@drawable/asst_score" />
 
             <TextView
                 android:id="@+id/txtFGScore"
@@ -52,7 +52,7 @@
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            app:srcCompat="@drawable/playagain" />
+            app:srcCompat="@drawable/nav_playagain" />
 
         <ImageView
             android:id="@+id/imgLeaderB"
@@ -61,6 +61,6 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"
-            app:srcCompat="@drawable/g_leaderboards" />
+            app:srcCompat="@drawable/asst_g_leaderboards" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

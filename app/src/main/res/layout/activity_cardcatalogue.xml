@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/cardcat"
-    android:background="@drawable/bg_cardcat"
+    android:background="@drawable/r_bg_cardcat"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CardCatalogue">
@@ -12,7 +12,7 @@
         android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/topbar_cardcat"
+        android:background="@drawable/r_topbar_cardcat"
         android:orientation="vertical"
         android:textAlignment="textEnd"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            app:srcCompat="@drawable/home" />
+            app:srcCompat="@drawable/nav_home" />
 
         <ImageView
             android:id="@+id/txtCC"
@@ -31,7 +31,7 @@
             android:layout_height="85dp"
             android:layout_gravity="center"
             android:textAlignment="center"
-            app:srcCompat="@drawable/cardcat" />
+            app:srcCompat="@drawable/asst_cardcat" />
 
         <HorizontalScrollView
             android:layout_width="match_parent"
@@ -49,70 +49,70 @@
                     android:layout_width="70dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/pk_charmander" />
+                    app:srcCompat="@drawable/ic_charmander" />
 
                 <ImageView
                     android:id="@+id/pk_bulbasaur"
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/pk_bulbasaur" />
+                    app:srcCompat="@drawable/ic_bulbasaur" />
 
                 <ImageView
                     android:id="@+id/pk_squirtle"
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/pk_squirtle" />
+                    app:srcCompat="@drawable/ic_squirtle" />
 
                 <ImageView
                     android:id="@+id/pk_caterpie"
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/pk_caterpie" />
+                    app:srcCompat="@drawable/ic_caterpie" />
 
                 <ImageView
                     android:id="@+id/pk_ditto"
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/pk_ditto" />
+                    app:srcCompat="@drawable/ic_ditto" />
 
                 <ImageView
                     android:id="@+id/pk_eevee"
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/pk_eevee" />
+                    app:srcCompat="@drawable/ic_eevee" />
 
                 <ImageView
                     android:id="@+id/pk_gardevoir"
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/pk_gardevoir" />
+                    app:srcCompat="@drawable/ic_gardevoir" />
 
                 <ImageView
                     android:id="@+id/pk_gengar"
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/pk_gengar" />
+                    app:srcCompat="@drawable/ic_gengar" />
 
                 <ImageView
                     android:id="@+id/pk_lapras"
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/pk_lapras" />
+                    app:srcCompat="@drawable/ic_lapras" />
 
                 <ImageView
                     android:id="@+id/pk_pikachu"
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/pk_pikachu" />
+                    app:srcCompat="@drawable/ic_pikachu" />
             </LinearLayout>
         </HorizontalScrollView>
 
@@ -126,13 +126,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
-        app:srcCompat="@drawable/charmander" />
+        app:srcCompat="@drawable/pk_charmander" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="300dp"
         android:layout_height="250dp"
-        android:background="@drawable/ld_bg"
+        android:background="@drawable/r_ld_bg"
         android:fontFamily="@font/pokemon"
         android:padding="10dp"
         android:text="..."

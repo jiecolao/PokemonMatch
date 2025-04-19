@@ -4,7 +4,7 @@
     android:id="@+id/linearLayout3"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/topbar_cardcat"
+    android:background="@drawable/r_topbar_cardcat"
     android:orientation="vertical"
     android:padding="10dp">
 
@@ -17,7 +17,7 @@
             android:id="@+id/imageView6"
             android:layout_width="324dp"
             android:layout_height="81dp"
-            app:srcCompat="@drawable/memorymatch" />
+            app:srcCompat="@drawable/asst_memorymatch" />
 
         <ImageView
             android:id="@+id/imgPause"

@@ -8,7 +8,7 @@
     <LinearLayout
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_pausegame"
+        android:background="@drawable/r_bg_pausegame"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,7 +20,7 @@
             android:layout_width="182dp"
             android:layout_height="63dp"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/gamepaused" />
+            app:srcCompat="@drawable/asst_gamepaused" />
 
         <ImageView
             android:id="@+id/imgResume"
@@ -29,7 +29,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            app:srcCompat="@drawable/resume" />
+            app:srcCompat="@drawable/nav_resume" />
 
         <ImageView
             android:id="@+id/imgRestart"
@@ -38,7 +38,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            app:srcCompat="@drawable/restart" />
+            app:srcCompat="@drawable/nav_restart" />
 
         <ImageView
             android:id="@+id/imgExitG"
@@ -47,7 +47,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"
-            app:srcCompat="@drawable/exit1" />
+            app:srcCompat="@drawable/nav_exit1" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

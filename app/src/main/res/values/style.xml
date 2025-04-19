@@ -4,7 +4,7 @@
         <item name="android:width">230dp</item>
         <item name="android:height">60dp</item>
         <item name="backgroundTint">@color/darkyellow</item>
-        <item name="icon">@drawable/pokeball</item>
+        <item name="icon">@drawable/asst_pokeball</item>
         <item name="iconGravity">start</item>
         <item name="iconSize">32dp</item>
         <item name="iconTintMode">multiply</item>
