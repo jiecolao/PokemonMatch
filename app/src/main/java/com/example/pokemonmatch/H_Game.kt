@@ -12,6 +12,8 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.lifecycle.lifecycleScope
+import androidx.room.Room
 import com.example.pokemonmatch.R.drawable.pk_bulbasaur
 import com.example.pokemonmatch.R.drawable.pk_caterpie
 import com.example.pokemonmatch.R.drawable.pk_charmander
@@ -30,6 +32,8 @@ import com.example.pokemonmatch.R.drawable.pk_psyduck
 import com.example.pokemonmatch.R.drawable.pk_snorlax
 import com.example.pokemonmatch.R.drawable.pk_squirtle
 import com.example.pokemonmatch.R.drawable.pk_vaporeon
+import com.example.pokemonmatch.db.database.AppDatabase
+import kotlinx.coroutines.launch
 
 class H_Game : AppCompatActivity() {
 
@@ -47,11 +51,17 @@ class H_Game : AppCompatActivity() {
     private var timeLeft: Long = 60000
     lateinit var lblTimer: TextView
     lateinit var pauseBtn: ImageView
+    lateinit var db: AppDatabase
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_hgame)
+
+        db = Room.databaseBuilder(
+            applicationContext,
+            AppDatabase::class.java, "pokemonmatch-db"
+        ).build()
 
         lblScore = findViewById(R.id.txtScore)
         lblStreak = findViewById(R.id.txtEStreak)
@@ -165,6 +175,14 @@ class H_Game : AppCompatActivity() {
     }
 
     fun gameFinished(){
+        var userDAO = db.userDao()
+        lifecycleScope.launch {
+            if (countScore.toLong() > userDAO.getScore(SessionUtil.g_id).highscore){
+                SessionUtil.highscore = countScore.toLong()
+                userDAO.updateScore(SessionUtil.g_id, SessionUtil.highscore)
+            }
+        }
+        pauseTimer()
         val dialogView = layoutInflater.inflate(R.layout.finished_game, null)
         val dialog = AlertDialog.Builder(this)
             .setView(dialogView)

@@ -9,13 +9,27 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import androidx.room.Room
-import com.example.pokemonmatch.db.dao.UserDAO
 import com.example.pokemonmatch.db.database.AppDatabase
 import com.example.pokemonmatch.db.entities.User
 import kotlinx.coroutines.launch
 
 
 class MainMenu : AppCompatActivity() {
+
+    // [/] Pause feature
+    // [/] Timer
+    // [/] mass produce
+    // [/] login, login as guest
+    // [/] reflect the score to db (in game)
+    // [/] leaderboard
+    // [/] card catalogue fix, update card libr, event listeners + text
+    // [ ] bg music, sfx
+    // [ ] icon
+    // [ ] compile app to exe
+
+    // DEBUG: check if activities return to Login act. or MM act. upon Exit
+    //        (since we changed the main activity to login activity)
+
 
     private lateinit var btnPlay: Button
     private lateinit var btnOptions: Button
@@ -31,26 +45,14 @@ class MainMenu : AppCompatActivity() {
         setContentView(R.layout.activity_mainmenu)
 
         initButtons() // init buttons
-        btnPlay.setOnClickListener() { goTo(SelectDifficulty::class.java, true) }
+        btnPlay.setOnClickListener() {
+            goTo(SelectDifficulty::class.java, true)
+            Log.d("UserCredentials", "Current ID in Session: ${SessionUtil.g_id}")
+        }
         btnOptions.setOnClickListener() { goTo(Options::class.java, true) }
         btnLeaderboard.setOnClickListener() { goTo(Leaderboard::class.java, true) }
         btnCatalogue.setOnClickListener() { goTo(CardCatalogue::class.java, true) }
         btnExit.setOnClickListener() { endApp() }
-
-        db = Room.databaseBuilder(
-            applicationContext,
-            AppDatabase::class.java, "pokemonmatch-db"
-        ).build()
-
-        val userDAO = db.userDao()
-        val newUser = User(g_id = 2, username = "Ash", password = "123", highscore = 0)
-
-        lifecycleScope.launch {
-//            userDAO.insertUser(newUser)
-            var users = userDAO.getAllUsers()
-            Log.d("AllUsesQuery", "Fetched: $users" )
-        }
-
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

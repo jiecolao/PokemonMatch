@@ -5,6 +5,7 @@ import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.os.Handler
+import android.se.omapi.Session
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -12,27 +13,13 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.lifecycle.lifecycleScope
+import androidx.room.Room
 import com.example.pokemonmatch.R.drawable.*
+import com.example.pokemonmatch.db.database.AppDatabase
+import kotlinx.coroutines.launch
 
 class E_Game : AppCompatActivity() {
-    // [/] Pause feature
-    // [/] Timer
-    // [ ] mass produce
-    // [ ] login, login as guest
-    // [ ] reflect the score to db
-    // [ ] card catalogue fix, update card libr, event listeners + text
-    // [ ] bg music, sfx
-    // [ ] compile app to exe
-
-    /* to be applied to other game modes:
-        - add streak
-        - change totalMatch
-        - change id referencing
-        - pokemonCont take n
-        - pause feature
-        - play again
-        - remove progress bar
-    */
 
     lateinit var pairs: Map<ImageView, Int>
     private val flippedcards = mutableListOf<ImageView>()
@@ -48,12 +35,18 @@ class E_Game : AppCompatActivity() {
     private var timeLeft: Long = 60000
     lateinit var lblTimer: TextView
     lateinit var pauseBtn: ImageView
+    lateinit var db: AppDatabase
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_egame)
+
+        db = Room.databaseBuilder(
+            applicationContext,
+            AppDatabase::class.java, "pokemonmatch-db"
+        ).build()
 
         lblScore = findViewById(R.id.txtEScore)
         lblStreak = findViewById(R.id.txtEStreak)
@@ -159,6 +152,14 @@ class E_Game : AppCompatActivity() {
     }
 
     fun gameFinished(){
+        var userDAO = db.userDao()
+        lifecycleScope.launch {
+            if (countScore.toLong() > userDAO.getScore(SessionUtil.g_id).highscore){
+                SessionUtil.highscore = countScore.toLong()
+                userDAO.updateScore(SessionUtil.g_id, SessionUtil.highscore)
+            }
+        }
+        pauseTimer()
         val dialogView = layoutInflater.inflate(R.layout.finished_game, null)
         val dialog = AlertDialog.Builder(this)
             .setView(dialogView)

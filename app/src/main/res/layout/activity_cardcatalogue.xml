@@ -113,6 +113,62 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/ic_pikachu" />
+
+                <ImageView
+                    android:id="@+id/pk_mew"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_mew" />
+
+                <ImageView
+                    android:id="@+id/pk_meowth"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_meowth" />
+
+                <ImageView
+                    android:id="@+id/pk_piplup"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_piplup" />
+
+                <ImageView
+                    android:id="@+id/pk_psyduck"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_psyduck" />
+
+                <ImageView
+                    android:id="@+id/pk_snorlax"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_snorlax" />
+
+                <ImageView
+                    android:id="@+id/pk_vaporeon"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_vaporeon" />
+
+                <ImageView
+                    android:id="@+id/pk_magikarp"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_magikarp" />
+
+                <ImageView
+                    android:id="@+id/pk_pidgey"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_pidgey" />
             </LinearLayout>
         </HorizontalScrollView>
 
@@ -129,13 +185,14 @@
         app:srcCompat="@drawable/pk_charmander" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/pk_desc"
         android:layout_width="300dp"
         android:layout_height="250dp"
         android:background="@drawable/r_ld_bg"
         android:fontFamily="@font/pokemon"
+        android:gravity="center"
         android:padding="10dp"
-        android:text="..."
+        android:text="@string/charmander"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"

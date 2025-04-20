@@ -9,8 +9,8 @@ import androidx.room.Index
     indices = [Index(value = ["username"], unique = true)]
     )
 data class User(
-    @PrimaryKey(autoGenerate = true) val g_id: Int,
+    @PrimaryKey(autoGenerate = true) val g_id: Int = 0,
     @ColumnInfo(name = "username") val username: String,
     @ColumnInfo(name = "password") val password: String,
-    @ColumnInfo(name = "highscore") val highscore: Long
+    @ColumnInfo(name = "highscore") val highscore: Long? = null
 )

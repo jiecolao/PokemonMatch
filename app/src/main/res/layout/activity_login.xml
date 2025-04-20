@@ -67,7 +67,7 @@
                 app:srcCompat="@drawable/asst_welcomeadv" />
 
             <EditText
-                android:id="@+id/inpEmail"
+                android:id="@+id/inpUsername"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
