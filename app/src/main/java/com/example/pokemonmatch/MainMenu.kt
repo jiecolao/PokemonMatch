@@ -23,12 +23,13 @@ class MainMenu : AppCompatActivity() {
     // [/] reflect the score to db (in game)
     // [/] leaderboard
     // [/] card catalogue fix, update card libr, event listeners + text
+    // [/] icon
     // [ ] bg music, sfx
-    // [ ] icon
-    // [ ] compile app to exe
+    // [/] compile app to exe
 
-    // DEBUG: check if activities return to Login act. or MM act. upon Exit
-    //        (since we changed the main activity to login activity)
+    // ISSUE: No migration object. For every changes in db, should uninstall and reinstall app
+    // ISSUE: No catch for non-unique guest names
+    // ISSUE: Some components are dark when downloaded in phone, due to the phone's dark theme mode
 
 
     private lateinit var btnPlay: Button

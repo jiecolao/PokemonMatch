@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PokemonMatch</string>
+    <string name="app_name">Pokemon Match</string>
     <string name="charmander">Charmander is a Fire type Pokémon. Charmander is a bipedal, reptilian Pokémon. Most of its body is colored orange, while its underbelly is light yellow and it has blue eyes. It has a flame at the end of its tail, which is said to signify its health.</string>
     <string name="bulbasaur">Bulbasaur is a small, green amphibian Pokemon with a seed on its back. The seed grows larger as Bulbasaur develops, and it stores energy and nutrients. It can survive for days without eating and is often found napping in bright sunlight</string>
     <string name="squirtle">Squirtle is a small, blue, turtle-like Pokémon with a hard shell on its back. It can withdraw into its shell for protection and can spray foamy water from its mouth. Squirtle is known for its ability to swim at high speeds due to its shell\'s aerodynamic shape.</string>

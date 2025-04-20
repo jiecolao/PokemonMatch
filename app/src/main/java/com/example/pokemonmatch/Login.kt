@@ -50,7 +50,13 @@ class Login : AppCompatActivity() {
             val newUser = User(username = username, password = userpass)
             try {
                 lifecycleScope.launch {
-                    if (userDAO.isUserNew(username)) {
+                    if(username.isNullOrBlank() || userpass.isNullOrBlank()) {
+                        AlertDialog.Builder(this@Login)
+                            .setTitle("Missing Fields")
+                            .setMessage("Please fill in all blanks.")
+                            .setPositiveButton("OK", null)
+                            .show()
+                    } else if (userDAO.isUserNew(username)) {
                         AlertDialog.Builder(this@Login)
                             .setTitle("No Existing User Found")
                             .setMessage("Would you like to sign up with the details you provided?")

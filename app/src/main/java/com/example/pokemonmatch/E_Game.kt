@@ -63,10 +63,10 @@ class E_Game : AppCompatActivity() {
         )
 
         val pokemonCont: MutableList<Int> = mutableListOf(
-            pk_bulbasaur, pk_caterpie, pk_charmander, pk_ditto, pk_eevee,
-            pk_gardevoir, pk_gengar, pk_lapras, pk_magikarp, pk_meowth,
-            pk_mew, pk_pidgey, pk_pikachu, pk_piplup, pk_psyduck,
-            pk_snorlax, pk_squirtle, pk_vaporeon)
+            ic_bulbasaur, ic_caterpie, ic_charmander, ic_ditto, ic_eevee,
+            ic_gardevoir, ic_gengar, ic_lapras, ic_magikarp, ic_meowth,
+            ic_mew, ic_pidgey, ic_pikachu, ic_piplup, ic_psyduck,
+            ic_snorlax, ic_squirtle, ic_vaporeon)
 
         //shuffle logic
         pokemonCont.shuffle()
@@ -153,9 +153,10 @@ class E_Game : AppCompatActivity() {
 
     fun gameFinished(){
         var userDAO = db.userDao()
+        var totalPoints = countScore.toLong() + (timeLeft/1000)
         lifecycleScope.launch {
-            if (countScore.toLong() > userDAO.getScore(SessionUtil.g_id).highscore){
-                SessionUtil.highscore = countScore.toLong()
+            if (totalPoints > userDAO.getScore(SessionUtil.g_id).highscore){
+                SessionUtil.highscore = totalPoints
                 userDAO.updateScore(SessionUtil.g_id, SessionUtil.highscore)
             }
         }
@@ -167,6 +168,7 @@ class E_Game : AppCompatActivity() {
             .create()
         dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         dialogView.findViewById<TextView>(R.id.txtFGScore).setText(countScore.toString())
+        dialogView.findViewById<TextView>(R.id.txtAddTimer).setText("+" + lblTimer.text)
         dialogView.findViewById<ImageView>(R.id.imgPlayAgain).setOnClickListener {
             dialog.dismiss()
             recreate()

@@ -73,7 +73,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:ems="10"
-                android:hint="Username"
+                android:hint="Enter username"
                 android:inputType="textEmailAddress" />
 
             <EditText
@@ -83,7 +83,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:ems="10"
-                android:hint="Password"
+                android:hint="Enter Password"
                 android:inputType="textPassword" />
 
             <Button

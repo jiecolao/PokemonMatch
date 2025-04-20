@@ -14,6 +14,24 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import androidx.room.Room
+import com.example.pokemonmatch.R.drawable.ic_bulbasaur
+import com.example.pokemonmatch.R.drawable.ic_caterpie
+import com.example.pokemonmatch.R.drawable.ic_charmander
+import com.example.pokemonmatch.R.drawable.ic_ditto
+import com.example.pokemonmatch.R.drawable.ic_eevee
+import com.example.pokemonmatch.R.drawable.ic_gardevoir
+import com.example.pokemonmatch.R.drawable.ic_gengar
+import com.example.pokemonmatch.R.drawable.ic_lapras
+import com.example.pokemonmatch.R.drawable.ic_magikarp
+import com.example.pokemonmatch.R.drawable.ic_meowth
+import com.example.pokemonmatch.R.drawable.ic_mew
+import com.example.pokemonmatch.R.drawable.ic_pidgey
+import com.example.pokemonmatch.R.drawable.ic_pikachu
+import com.example.pokemonmatch.R.drawable.ic_piplup
+import com.example.pokemonmatch.R.drawable.ic_psyduck
+import com.example.pokemonmatch.R.drawable.ic_snorlax
+import com.example.pokemonmatch.R.drawable.ic_squirtle
+import com.example.pokemonmatch.R.drawable.ic_vaporeon
 import com.example.pokemonmatch.R.drawable.pk_bulbasaur
 import com.example.pokemonmatch.R.drawable.pk_caterpie
 import com.example.pokemonmatch.R.drawable.pk_charmander
@@ -83,10 +101,10 @@ class M_Game : AppCompatActivity() {
 
 
         val pokemonCont: MutableList<Int> = mutableListOf(
-            pk_bulbasaur, pk_caterpie, pk_charmander, pk_ditto, pk_eevee,
-            pk_gardevoir, pk_gengar, pk_lapras, pk_magikarp, pk_meowth,
-            pk_mew, pk_pidgey, pk_pikachu, pk_piplup, pk_psyduck,
-            pk_snorlax, pk_squirtle, pk_vaporeon
+            ic_bulbasaur, ic_caterpie, ic_charmander, ic_ditto, ic_eevee,
+            ic_gardevoir, ic_gengar, ic_lapras, ic_magikarp, ic_meowth,
+            ic_mew, ic_pidgey, ic_pikachu, ic_piplup, ic_psyduck,
+            ic_snorlax, ic_squirtle, ic_vaporeon
         )
 
         //shuffle logic
@@ -174,9 +192,10 @@ class M_Game : AppCompatActivity() {
 
     fun gameFinished(){
         var userDAO = db.userDao()
+        var totalPoints = countScore.toLong() + (timeLeft/1000)
         lifecycleScope.launch {
-            if (countScore.toLong() > userDAO.getScore(SessionUtil.g_id).highscore){
-                SessionUtil.highscore = countScore.toLong()
+            if (totalPoints > userDAO.getScore(SessionUtil.g_id).highscore){
+                SessionUtil.highscore = totalPoints
                 userDAO.updateScore(SessionUtil.g_id, SessionUtil.highscore)
             }
         }
@@ -188,6 +207,7 @@ class M_Game : AppCompatActivity() {
             .create()
         dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         dialogView.findViewById<TextView>(R.id.txtFGScore).setText(countScore.toString())
+        dialogView.findViewById<TextView>(R.id.txtAddTimer).setText("+" + lblTimer.text)
         dialogView.findViewById<ImageView>(R.id.imgPlayAgain).setOnClickListener {
             dialog.dismiss()
             recreate()
